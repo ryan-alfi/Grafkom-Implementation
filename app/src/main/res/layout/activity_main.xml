@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context="me.satelitkangkung.grafkom.MainActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Implementasi\nGrafika Komputer"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimary"
+        />
+
+    <Button style="@style/Widget.AppCompat.Button.Colored"
+        android:id="@+id/btn_koorgaris"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Koordinat Pembentukan Garis"
+        android:layout_margin="20dp"/>
+
+    <Button style="@style/Widget.AppCompat.Button.Colored"
+        android:id="@+id/btn_koorlingkaran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Koordinat Pembentukan Lingkaran"
+        android:layout_margin="20dp"/>
+
+    <Button style="@style/Widget.AppCompat.Button.Colored"
+        android:id="@+id/btn_koorelips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Koordinat Pembentukan Elips"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginTop="55dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="Anggota Kelompok:\n0617124024 - Fajar Yulianto\n0617124014 - Ari Fajriandi Alfi\n0617124001 - Asep Maulana Ismail"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"/>
+
+</LinearLayout>

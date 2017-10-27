@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_margin="30dp"
+    tools:context="me.satelitkangkung.grafkom.ParamElipsActivity">
+
+    <ScrollView android:id="@+id/scrollDiEllps"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Radius" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jari-jari X :" />
+
+    <EditText
+        android:id="@+id/et_xjari"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="400"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jari-jari Y :" />
+
+    <EditText
+        android:id="@+id/et_yjari"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="250"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Koordinat Titik Pusat :" />
+
+    <TextView
+        android:id="@+id/titlex1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="X1 :" />
+
+    <EditText
+        android:id="@+id/et_x1pusat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Masukkan kurang dari 20"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/titley1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Y1 :" />
+
+    <EditText
+        android:id="@+id/et_y1pusat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Masukkan kurang dari 20"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/titleRButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Tipe Garis" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton android:id="@+id/rb_tipe_solid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Solid"
+            android:onClick="onTipeGarisClicked"
+            android:checked="true"/>
+        <RadioButton android:id="@+id/rb_tipe_dotted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="Dotted"
+            android:onClick="onTipeGarisClicked"/>
+        <RadioButton android:id="@+id/rb_tipe_dashed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:onClick="onTipeGarisClicked"
+            android:text="Dashed"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Ketebalan Garis :"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton android:id="@+id/rb_thigh_tipis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:onClick="onKetebalanGarisClicked"
+            android:checked="true"
+            android:text="Tipis"/>
+        <RadioButton android:id="@+id/rb_thigh_sedang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:onClick="onKetebalanGarisClicked"
+            android:text="Sedang"/>
+        <RadioButton android:id="@+id/rb_thigh_tebal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onKetebalanGarisClicked"
+            android:text="Tebal"/>
+    </RadioGroup>
+
+    <Button android:id="@+id/btn_elips_colorPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:onClick="onColorElipsCLicked"
+        android:text="Pilih Warna"/>
+
+    <Button style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:id="@+id/btn_drawElips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Mulai Gambar" />
+
+            </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
